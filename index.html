@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+ <script>
+  function findMatchingElements() {
+const inputString = prompt("ввод чисел");
+const numbers = inputString.split(" ").map(Number);
+const matchingElements = [];
+
+for (let i = 0; i < numbers.length; i++) {
+if (numbers[i] === i) {
+matchingElements.push(numbers[i]);
+}
+}
+
+if (matchingElements.length > 0) {
+alert(`Элементы, индекс которых совпадает со значением: ${matchingElements.join(", ")}`);
+} else {
+alert("Нет элементов, индекс которых совпадает со значением.");
+}
+}
+findMatchingElements();
+ </script>
+</head>
+<body>
+</body>
+</html>
